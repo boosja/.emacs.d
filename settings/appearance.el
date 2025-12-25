@@ -16,8 +16,17 @@
 
 ;; Fullscreen the frame
 (add-to-list 'initial-frame-alist '(fullscreen . maximized))
+
 ;; Hide frame bar
 (set-frame-parameter nil 'undecorated t)
+
+(defvar bsj/is-decorated t)
+(defun toggle-frame-decoration ()
+  (interactive)
+  (setq bsj/is-decorated (not bsj/is-decorated))
+  (set-frame-parameter nil 'undecorated bsj/is-decorated))
+
+(global-set-key (kbd "C-x 5 x") 'toggle-frame-decoration)
 
 ;; Don't beep. Just blink the modeline on errors.
 (setq ring-bell-function (lambda ()
