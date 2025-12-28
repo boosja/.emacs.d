@@ -4,6 +4,9 @@
 ;; Set up appearance early
 (require 'appearance)
 
+;; Configure the package manager
+(require 'packages)
+
 ;; Sanity
 (require 'sane-defaults)
 
