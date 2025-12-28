@@ -3,6 +3,9 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
 (if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
+;; No splash screen
+(setq inhibit-startup-message t)
+
 ;; Color all language features
 (setq font-lock-maximum-decoration t)
 
