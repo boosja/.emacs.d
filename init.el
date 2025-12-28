@@ -10,5 +10,8 @@
 ;; Sanity
 (require 'sane-defaults)
 
+;; Set up tooling for the rest of the configuration
+(require 'tooling)
+
 ;; Add utilities
 (require 'buffers)
