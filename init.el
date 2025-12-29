@@ -1,6 +1,10 @@
 ;; Add settings to load-path
 (add-to-list 'load-path (expand-file-name "settings" user-emacs-directory))
 
+;; Swap super and meta keys
+(setq x-meta-keysym 'super)
+(setq x-super-keysym 'meta)
+
 ;; Set up appearance early
 (require 'appearance)
 
