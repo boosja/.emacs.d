@@ -20,3 +20,8 @@
 ;; Add utilities
 (require 'navigation)
 (require 'buffers)
+
+;; Load all packages
+(dolist (file (directory-files packages-dir t "^[^#].*el$"))
+  (when (file-regular-p file)
+    (load file)))
