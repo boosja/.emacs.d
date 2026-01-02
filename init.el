@@ -18,4 +18,5 @@
 (require 'tooling)
 
 ;; Add utilities
+(require 'navigation)
 (require 'buffers)
