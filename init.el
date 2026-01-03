@@ -25,3 +25,6 @@
 (dolist (file (directory-files packages-dir t "^[^#].*el$"))
   (when (file-regular-p file)
     (load file)))
+
+;; Add box-drawing-mode
+(require 'box-drawing-mode)
